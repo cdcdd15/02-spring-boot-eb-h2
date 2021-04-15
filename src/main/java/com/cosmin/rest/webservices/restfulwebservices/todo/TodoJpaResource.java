@@ -22,8 +22,9 @@ public class TodoJpaResource {
 	private TodoJpaRepository todoJpaRepository;
 
 	@GetMapping("/hello-world")
-	public ResponseEntity<Void> hello() {
-		return ResponseEntity.ok().build();
+	public ResponseEntity<String> hello() {
+		return new ResponseEntity<String>("Hello", HttpStatus.OK);
+//		return ResponseEntity.ok().build();
 	}
 
 	@GetMapping("/jpa/users/{username}/todos")
