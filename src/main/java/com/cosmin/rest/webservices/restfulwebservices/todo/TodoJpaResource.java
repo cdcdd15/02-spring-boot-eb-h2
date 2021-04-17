@@ -23,7 +23,7 @@ public class TodoJpaResource {
 
 	@GetMapping("/hello-world")
 	public ResponseEntity<String> hello() {
-		return new ResponseEntity<String>("Hello", HttpStatus.OK);
+		return new ResponseEntity<String>("Hello world", HttpStatus.OK);
 //		return ResponseEntity.ok().build();
 	}
 
