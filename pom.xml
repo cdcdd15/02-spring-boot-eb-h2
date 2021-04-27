@@ -98,7 +98,7 @@
 					</execution>
 				</executions>
 				<configuration>
-					<repository>cosmin/${project.name}</repository>
+					<repository>cosdin/${project.name}</repository>
 					<tag>${project.version}</tag>
 					<skipDockerInfo>true</skipDockerInfo>
 				</configuration>
